@@ -11,7 +11,8 @@
     <div class="wrapper">
         <div class="content">
             <h1>Detect IP address country:</h1>
-            <h1>IPs read from /../ipAddress.txt</h1>
+            <h1>IPs read from <? echo(__DIR__); ?>\ipAddress.txt</h1>
+            <h1>Network read from <? echo(__DIR__); ?>\network.txt</h1>
             <div class="btns">
                 <form action="" method="post">
                     <input type="submit" value="Read" name="Read">
@@ -20,7 +21,9 @@
                     <input type="submit" value="Clear" name="Clear">
                 </form>
             </div>
-            <? include "main.php"; ?>
+            <div class="container">
+                <? include "main.php"; ?>
+            </div>
         </div>
     </div>
 </body>
