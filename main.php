@@ -20,6 +20,10 @@ if(isset($_POST['Read'])){
                 $filename = "ip/unknown.txt";
                 file_put_contents($filename, $line."\n", FILE_APPEND);
             }
+            catch(InvalidArgumentException $e){
+                $filename = "ip/unknown.txt";
+                file_put_contents($filename, $line."\n", FILE_APPEND);
+            }
         }
     }
     // var_dump($array);
