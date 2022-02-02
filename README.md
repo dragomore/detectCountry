@@ -1,3 +1,3 @@
 # detectCountry
-1. Открыть нужную дерикторию.
+1. Открыть нужную директорию.
 2. Прописать git clone "https://github.com/dragomore/detectCountry".
